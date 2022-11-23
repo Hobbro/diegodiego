@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mukta&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+
+#mh {
+position: relative;
+width: 550px;
+background: var(--cor4);
+margin: auto;
+border: 3px solid var(--cor2);
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+}
+
+#mh .topo {
+width: 550px;
+height: 250px;
+background: var(--topo) #000000ad center/cover;
+background-blend-mode: multiply;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+text-transform: uppercase;
+color: var(--texto);
+}
+
+#mh .topo frase {
+font: 70px dosis;
+width: 90%;
+text-align: center;
+}
+
+#mh .topo sub {
+width: 80%;
+font: 10px mukta;
+text-align: justify;
+text-align-last: center;
+line-height: 10px;
+margin-top: -10px;
+}
+
+#mh .pokemons {
+width: 550px;
+height: 100px;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: row;
+margin-top: -48px;
+}
+
+#mh .pokemons poke {
+position: relative;
+z-index: 2;
+width: 75px;
+height: 75px;
+border: 4px solid #ddd;
+margin-right: 7px;
+border-radius: 100%;
+display: flex;
+align-items: center;
+justify-content: center;
+overflow: hidden;
+background-color: var(--cor);
+}
+
+#mh .pokemons poke:nth-last-of-type(1) {
+margin-right: 0px;
+}
+
+#mh .pokemons poke img {
+filter: grayscale(1);
+mix-blend-mode: multiply;
+width: 75px;
+height: 75px;
+border-radius: 100%;
+transition: 0.5s;
+transition-delay: 0.5s;
+}
+
+#mh .pokemons poke:hover img {
+filter: grayscale(0);
+mix-blend-mode: unset;
+}
+
+#mh .pokemons line {
+width: 550px;
+height: 4px;
+position: absolute;
+z-index: 1;
+background-color: var(--cor2);
+}
+
+#mh .texto {
+width: 475px;
+margin-top: 25px;
+margin-bottom: 25px;
+color: #dddddd;
+font: 12px verdana;
+text-align: justify;
+line-height: 14px;
+}
+
+#mh .texto b {
+color: var(--cor3);
+}
+
+#mh dl.codebox {
+background: var(--cor);
+color: #F0F0F0!important;
+border: 0px;
+font-family: roboto;
+margin: 1px;
+font-size: 11px;
+padding: 10px;
+border-radius: 0px;
+outline: 0px;
+}
+
+#mh dl.codebox dt {
+display: block;
+text-shadow: 1px 1px 1px #000;
+text-align: center;
+font-weight: bold;
+font-size: 11px;
+padding: 5px;
+margin-bottom: 3px;
+text-transform: uppercase;
+border-bottom: none;
+}
+
+#mh .info {
+width: 550px;
+display: flex;
+flex-direction: row;
+border-top: 2.5px solid var(--cor2);
+min-height: 150px;
+}
+
+#mh .titulo {
+width: 10px;
+min-height: 150px;
+padding: 10px;
+writing-mode: vertical-rl;
+display: flex;
+align-items: center;
+justify-content: center;
+font: 12px roboto;
+text-transform: uppercase;
+font-weight: bold;
+background: var(--cor);
+}
+
+#mh .detalhe {
+width: 500px;
+padding: 10px;
+color: var(--texto);
+font: 12px roboto;
+text-align: justify;
+min-height: 150px;
+}
+
+#mh .titulo:nth-of-type(odd) {
+transform: scaleX(-1) scaleY(-1);
+}
+
+#mh .detalhe a,  #mh .detalhe a:visited {
+color: var(--cor3);
+transition: 0.2s;
+}
+
+#mh .detalhe a:hover {
+color: var(--texto);
+}
+
+#mh:after {
+content: "[moonchild]";
+position: absolute;
+bottom: -15px;
+font: 7px verdana;
+color: #ffffff;
+}
